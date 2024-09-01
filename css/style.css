@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --box-shadow: 0 0 20px rgba(0, 0, 0, 0.267);
+}
+.dark-theme {
+  --mode-background: #191f2a;
+  --mode-elements: #3c485d;
+  --focus-color: #272d3562;
+  --mode-font: #fff;
+}
+
+.light-theme {
+  --mode-background: #f1f1f1;
+  --mode-elements: #fff;
+  --focus-color: rgb(240, 240, 240);
+  --mode-font: rgb(37, 37, 37);
+}
+
+body {
+  background-color: var(--mode-background);
+  color: var(--mode-font);
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 0 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mode-elements);
+  padding: 0.5rem 2rem;
+  border-radius: 100vw;
+  box-shadow: var(--box-shadow);
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--mode-font);
+}
+
+.theme-switcher:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.theme-switcher img {
+  height: 40px;
+  width: 40px;
+}
+
+.form {
+  background-color: var(--mode-elements);
+  box-sizing: var(--box-shadow);
+  border-radius: 100vw;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.username-input {
+  width: 80%;
+  padding: 0.5rem 2rem;
+  background-color: var(--mode-elements);
+  border: 2px solid var(--mode-font);
+  outline: none;
+  border-radius: 10px;
+  color: var(--mode-font);
+  font-size: 1.3rem;
+}
+
+.username-input:focus {
+  background-color: var(--focus-color);
+}
+
+.username-input::placeholder {
+  color: rgb(211, 211, 211);
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  border: none;
+}
+
+.card {
+  background-color: var(--mode-elements);
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  border-radius: 20px;
+  margin-top: 2rem;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.profile-img-area {
+  width: 25%;
+}
+
+.profile-img-area img {
+  width: 100%;
+}
+
+.stats-area {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.name-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.joined-date {
+  width: 40%;
+}
+.name {
+  font-weight: bold;
+}
+
+.user-name {
+  color: rgb(0, 200, 255);
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.bio {
+  margin-top: 1.5rem;
+}
+
+.user-followers-detail {
+  background-color: var(--mode-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+}
+
+.social svg {
+  stroke: var(--mode-font);
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-item a {
+  color: rgb(0, 200, 255);
+  text-decoration: none;
+}
+
+.social-item a:visited {
+  color: rgb(0, 200, 255);
+}
+
+@media (max-width: 650px) {
+  .social {
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+}
+@media (max-width: 580px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social {
+    justify-content: center;
+    align-items: center;
+  }
+  .stats-area {
+    width: 100%;
+  }
+  .profile-img-area {
+    width: 80%;
+  }
+  .form {
+    gap: 1rem;
+  }
+  .bio {
+    margin-bottom: 1rem;
+  }
+  .joined-date {
+    width: 100%;
+  }
+  .user-followers-detail {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .name {
+    margin-bottom: 1rem;
+  }
+  .logo h1 {
+    font-size: 1.1rem;
+  }
+
+  .username-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .name-details {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.hidden {
+  display: none;
+}

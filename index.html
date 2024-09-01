@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- linking css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- linking javascritp fiel -->
+    <script src="js/app.js" defer></script>
+
+    <title>Git hub profile viewer</title>
+  </head>
+
+  <body class="dark-theme">
+    <header class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <h1>Github finder</h1>
+        </div>
+        <div class="theme-switcher dark">
+          <img src="images/icons8-sun (2).svg" alt="sun" />
+          <p>light</p>
+        </div>
+        <div class="theme-switcher light hidden">
+          <img src="images/icons8-moon-man.svg" alt="moon-icon" />
+          <p>dark</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="form">
+        <form class="form">
+          <input
+            type="text"
+            class="username-input"
+            placeholder="Enter Github User Name"
+            required
+          />
+          <button class="btn search" type="submit">Search</button>
+        </form>
+      </section>
+
+      <section id="card">
+        <div class="card container">
+          <div class="profile-img-area">
+            <img
+              class="user-img"
+              src="https://img.icons8.com/color/150/000000/circled-user-male-skin-type-4--v1.png"
+            />
+          </div>
+          <div class="stats-area">
+            <div class="name-details">
+              <div class="user-name-details">
+                <h2 class="name">Zainabdullahali</h2>
+                <a href="#" target="_blank" class="user-name"
+                  >@Zainabdullahali
+                </a>
+                <p class="bio">This profile has no bio</p>
+              </div>
+              <div class="joined-date">
+                <p class="join-date">joined 17 jan 2022</p>
+              </div>
+            </div>
+            <div class="user-followers-detail">
+              <div class="repo">
+                <p>Repo</p>
+                <h4 class="no-of-repo">20</h4>
+              </div>
+              <div class="followers">
+                <p>followers</p>
+                <h4 class="no-of-followers">2000</h4>
+              </div>
+              <div class="followings">
+                <p>following</p>
+                <h4 class="no-of-followings">100</h4>
+              </div>
+            </div>
+
+            <div class="social">
+              <div class="location-con social-item">
+                <svg
+                  class="location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="10" r="3" />
+                  <path
+                    d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"
+                  />
+                </svg>
+
+                <p class="location">chennai , india</p>
+              </div>
+              <div class="website social-item">
+                <svg
+                  class="website-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                  ></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path>
+                </svg>
+
+                <a class="user-url" target="_blank" href="yuvraj-me.netlify.com"
+                  >yuvraj-me.netlify.com</a
+                >
+              </div>
+              <div class="twitter social-item">
+                <svg
+                  class="twitter-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+
+                <a class="user-twitter" target="_blank" href="https://yuvraj505"
+                  >yuvraj505</a
+                >
+              </div>
+              <div class="company social-item">
+                <svg
+                  class="company"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9" />
+                  <path d="M9 22V12h6v10M2 10.6L12 2l10 8.6" />
+                </svg>
+
+                <p class="user-company">No company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
